@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <title>Python Technical Documentation</title>
+</head>
+<body>
+<script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+
+<nav id="navbar">
+    <header><h1>Python Documentation</h1></header>
+    <a href="#introduction" class="nav-link">Introduction</a>
+    <a href="#syntax" class="nav-link">Syntax</a>
+    <a href="#comments" class="nav-link">Comments</a>
+    <a href="#variables" class="nav-link">Variables</a>
+    <a href="#data_types" class="nav-link">Data Types</a>
+</nav>
+
+<main id="main-doc">
+
+    <section class="main-section" id="introduction">
+       <header><h2>Introduction</h2></header>
+        <p>Python is a high-level, interpreted and general-purpose dynamic programming language that emphasizes on code readability. Python enables programmers to code in fewer lines as compared to other programming language. The language founded in 1991 by developer Guido Van Rossum. It is used for web development (server-side), system scripting, software development, data handling and performing complex mathematical operations. Some important features of Python are given below:</p>
+        <ul>
+            <li>Interactive Language – Python supports command line shell which provides output for each statement while keeping previously fed statements in active memory. A new line is sent to the interpreter which is evaluated both in part and in whole.</li>
+            <li>Interpreted Language – Python is an interpreted language. It executes code line by line which enables easy debugging and learning.</li>
+            <li>Integrated Language – Python can be easily integrated with other languages like C, C++ and JAVA etc.</li>
+            <li>Open-Source Language – Python is an open source language which makes it freely usable and distributable, even for commercial use.</li>
+            <li>Modular Language – Python allows user to logically organize python code in a file which can be further imported in another python code. This makes Python easy to learn and code.</li>
+        </ul>
+    </section>
+
+    <section class="main-section" id="syntax">
+        <header><h2>Syntax</h2></header>
+        <p>Python allows a user to perform interactive mode programming which involves executing a program by writing directly in the command line.</p>
+        <p>In Python, a user can also do script mode programming which involves writing and saving a program as a python script and running it in the command line. The file extension of a python script is .py.</p>
+        <p>Unlike C++ and Java which uses { } to indicate a block of code, Python uses indentation. Indentation means spaces at the start of a line of code. In the below example, if block of code has used two spaces as indentation.</p>
+        <p>Unlike other programming languages, Python does not require to declare a variable or its data type. The data type of a variable is set when a value is assigned to it. To assign a value(s) to the variable, = operator is used.</p>
+        <p>The Comments are added in programming code with the purpose of in-code documentation. It makes the code more readable and hence easier to update the code later. It starts with # and ends with the end of that line. Anything after # to the end of the line is a single line comment and will be ignored by the compiler.</p> 
+    </section>
+
+    <section class="main-section" id="comments">
+       <header><h2>Comments</h2></header> 
+        <p>The Comments are added in programming code with the purpose of making the code easier to understand. It makes the code more readable and hence easier to update the code later. Comments are ignored by the compiler while running the code. In python, there are two ways of putting a comment.</p>
+        <ul>
+            <li>Single line comment</li>
+            <li>Multi-line comment</li>
+        </ul>
+        <h3>Single line Comment</h3>
+        <p>It starts with # and ends with the end of that line. Anything after # to the end of the line is a single line comment and will be ignored by the compiler.</p>
+        <p>Example:</p>
+        <code># first line comment<br>
+            print('Hello World!.') # second line comment</code>
+        <p>The output of the above code will be:</p>
+        <code>Hello World!.</code>
+        <h3>Multi-line Comment</h3>
+        <p>Python does not have multi-line comment functionality however this can be achieved by starting each line by #. The same can be achieved by enclosing text between tripe quotes (""" ... """ or ''' ... '''). Compiler considers the text wrapped inside triple quotes as a comment as long as it is not assigned to any variable.</p>
+        <p>Example: In below code, multi-line comments are used which is achieved by either starting each line by # or enclosing text between triple single quotes '''...'''.</p>
+        <code>#comment line 1<br>
+          #comment line 2<br>
+           '''<br>
+          comment line 3<br>
+           comment line 4<br>
+            '''<br>
+          print(  'Hello World!.') </code>
+        <p>The output of the above code will be:</p>
+        <code>Hello World!.</code>
+    </section>
+
+    <section class="main-section" id="variables">
+        <header><h2>Variables</h2></header>
+        <p>Variable is a given name to a reserved memory location. When a variable is created in the program, it reserves some space in the memory to store value(s) and the interpreter allocates memory for the given variable based on its datatype. Value(s) is stored in the variable by assigning different datatypes to it like number, string and sequences, etc.</p>
+        <h3>Assigning Value to a Variable</h3>
+        <p>Unlike Java & C++, Python does not require to declare a variable or its data type. The data type of a variable is set when a value is assigned to it. To assign a value(s) to the variable, = operator is used.</p>
+        <code>#store number in the variable 'x'<br>
+            x = 15<br>
+            print(x)<br>
+            
+            #store text in the variable 'y'<br>
+            y = 'Hello'<br>
+            print(y)<br>
+            
+            #store sequence in the variable 'z'<br>
+            z = [1, 2, 3]<br>
+            print(z)</code>
+            <p>The output of the above code will be:</p>
+            <code>15<br>
+
+                Hello<br>
+                
+                [1, 2, 3]</code>    
+    </section>
+
+    <section class="main-section" id="data_types">
+       <header> <h2>Data Types</h2></header>
+        <p>One of the most important parts of learning any programming language is to understand what are the available data types, and how data is stored, accessed and manipulated in that language. Python is an object-orientated language, everything in Python is an object, and every value in Python has a datatype. Hence, in Python, data types are classes and variables are an instance (object) of these classes.</p>
+        <h3>type() function</h3>
+        <p>The Python type() function is used to find out the datatype of a specified variable. Please see the example below.</p>
+        <code>MyInt = 10<br>
+            print(type(MyInt))<br>
+            
+            MyFloat = 10.5<br>
+            print(type(MyFloat))</code>
+            <p>The output of the above code will be:</p>
+            <code> &ltclass 'int'&gt<br>
+
+                &ltclass 'float'&gt</code>
+    </section>
+
+    <section class="ref">
+        <h2>Reference</h2>
+        <ul>
+            <li>All the documentation in this page is taken from<a href="https://www.alphacodingskills.com/python/python-data-types.php">Alpha Coding Skills</a></li>
+        </ul>
+    </section>
+</main>
+</body>
+</html>
